@@ -1,0 +1,10 @@
+dist/*
+node_modules/*
+.cache/*
+.vscode/*
+package-lock.json
+yarn.lock
+assets/*
+.DS_Store
+yarn-error.log
+bkup/*

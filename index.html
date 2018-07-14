@@ -1,0 +1,45 @@
+<!doctype html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Hello TensorFlowJS!</title>
+	<script src="//cdn.jsdelivr.net/phaser/2.5.0/phaser.min.js"></script>
+	<!-- NOTE: -->
+	<!-- if you want to train, below must comment out, if you want to predict and watch the game, below must uncomment.. -->
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"></script>
+</head>
+
+<!--
+TOOD: 
+	- update the model name with parameters (better yet put them in a named directory)
+	- add reinforcement learning 
+-->
+
+<body>
+	<h1>Game On!</h1>
+
+	<script type="text/javascript"></script>
+	<div>
+		<div>
+			<button id='button-open-gamepanel'>Open Game Panel</button>
+			<button id='button-replay-game'>Replay</button>
+		</div>
+		<div id='gamePanel'></div>
+	</div>
+
+	<br/>
+	<div>
+		Upload model and watch
+		<!-- <input type="file" id="model-file-selector" onchange='loadModel(this);' name="files[]" multiple/> -->
+		<input type="file" id="model-file-selector" name="files[]" multiple/>
+
+	</div>
+	<br/>
+
+	<div>
+		<button id='mainButton-gamedata'>Train</button>
+	</div>
+
+</body>
+<script src="intelligence.js"></script>
+<script src="game.js"></script>
